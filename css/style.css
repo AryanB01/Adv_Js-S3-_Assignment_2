@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+/* CSS */
+header{
+    margin: 5px 5px 0 ;
+}
+body > .container{
+    max-width: 995px;
+}
+body > main{
+    background-color: beige;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    
+}
+
+footer{
+    background-color: #f8f9fa;
+    margin: 0 5px 2em;
+    padding: 1em;
+}
