@@ -18,9 +18,153 @@ body > main{
     padding: 0;
     
 }
+.small-round-pp{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.small-round-pp > img{
+    border-radius: 50%;
+    height: 150px;
+    width: 130px;
+}
 
+.home-section > .contactMe{
+    position: absolute;
+    top: 36em;
+    left: 46em;
+}
+
+.about-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.about-section > h2{
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid black;
+    margin: 20px 5em;
+}
+
+.about-section > img{
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.div-project{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.div-project h2{
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid black;
+    margin: 10px 5em;
+    
+}
+
+.div-project p{
+    margin-bottom: -6em;
+}
+
+.project-section{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin-top: -8em;
+    
+}
+.project-section div{
+    width: calc(98%/5);
+    
+}
+.project-section div figure img:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+    cursor: pointer;
+}
+.project-section div figure img{
+    height: 250px;
+    width: 250px;
+    transition: 0.5s;
+}
+
+.project-section div figure h3{
+    border-bottom: 1px solid black;
+    margin: 5px 1em;
+    text-align: center;
+}
+
+.skill-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.skill-section h2{
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid black;
+    margin: 10px 5em;
+    padding: 10px;
+}
+.skill-section p{
+    font-style: italic;
+}
+.skill-section div{
+    width: 50%;
+    text-align: center;
+    border-right: 1px solid black;
+}
+.skill-section div:nth-child(5){
+    border-right: none;
+}
+.skill-section div h3{
+    margin: 10px 4em;
+    border-bottom: 1px solid black;
+    padding: 10px;
+}
+.skill-section div li{
+    list-style: none ;
+    padding: 5px;
+}
+.contactme-section > ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+.contactme-section > ul > li{
+    list-style: none;
+    display: inline; 
+}
+.contactme-section h2{
+    text-align: center;
+    border-bottom: 1px solid black;
+    margin: 10px 5em;
+    padding: 10px;
+}
+.contactme-section > p:nth-child(2){
+    font-weight: bold;
+}
+.contactme-section > p:nth-child(4){
+    font-style: italic;
+}
+.contactme-section form,label{
+    margin: 10px;
+}
+.contactme-section button[type="submit"]{
+    margin: 10px;
+}
 footer{
     background-color: #f8f9fa;
     margin: 0 5px 2em;
     padding: 1em;
+    text-align: center;
 }

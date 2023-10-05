@@ -1,22 +1,26 @@
-<section>
+<section class="contactme-section">
     <h2>Contact</h2>
-    <h3>Fill the form below to reach me:</h3>
-    <form>
-        <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-          </div>
-          <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Queries:</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-          </div>
-          <button id="submit">submit</button>
-    </form>
+    <p>Please fill the form below to reach me:</p>
+    <form id="formContact">
+      <div class="form-group">
+          <label for="username">Username:</label>
+          <input type="text" class="form-control" id="username" required>
+      </div>
+      <div class="form-group">
+          <label for="phone">Phone Number:</label>
+          <input type="tel" class="form-control" id="phone" placeholder="(xxx) xxx-xxxx" required>
+      </div>
+      <div class="form-group">
+          <label for="concerns">Other Concerns:</label>
+          <textarea class="form-control" id="concerns" rows="5" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-contact btn-primary">Submit</button>
+  </form>
     
 
     <p>If you want to see my work, have any quetions for me or want to employ me. You can find me here:</p>
     <ul>
-        <li><a href="https://github.com/AryanB01">GitHub</a></li>
-        <li><a href="https://www.linkedin.com/in/aryan-bhattarai-4135961b5/">Linkedin</a></li>
+        <li><a href="https://github.com/AryanB01" class="btn btn-secondary">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/aryan-bhattarai-4135961b5/" class="btn btn-secondary">Linkedin</a></li>
     </ul>
 </section>
