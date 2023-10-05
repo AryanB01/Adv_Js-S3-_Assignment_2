@@ -35,6 +35,11 @@ body>main {
 
 }
 
+.home-section div{
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
 .small-round-pp {
     width: 100%;
     display: flex;
@@ -55,11 +60,7 @@ body>main {
     cursor: pointer;
 }
 
-.home-section>.contactMe {
-    position: absolute;
-    top: 37em;
-    left: 47em;
-}
+
 
 .about-section {
     display: flex;

@@ -6,3 +6,4 @@ Load Content function loads the nav pages dynamically, without having to reload 
 I have used bootstrap as well as hand written css for styling the page.
 
 Github: https://github.com/AryanB01/Adv_Js-S3-_Assignment_2
+render: https://comp2112-assignmentt-2-portfolio.onrender.com
