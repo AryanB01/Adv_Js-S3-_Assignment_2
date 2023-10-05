@@ -1,7 +1,7 @@
 (function () {
   // for loading header
   let LoadHeader = () => {
-    $.get("./views/shared/header.html", (htmlData) => {
+    $.get(`./views/shared/header.html`, (htmlData) => {
       $("header").html(htmlData);
       LoadContent(); // this is for loading home as I want home to show instead of index at first.
 
@@ -20,7 +20,7 @@
 
   // for loading footer
   let LoadFooter = () => {
-    $.get("./views/shared/footer.html", (htmlData) => {
+    $.get(`./views/shared/footer.html`, (htmlData) => {
       $("footer").html(htmlData);
     });
   };
