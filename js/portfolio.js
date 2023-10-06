@@ -70,7 +70,6 @@
     let activePage = document.title;
     if (activePage == "Portfolio") {
       // console.log("test here");
-      document.title = "home";
       $.get(`./views/home.html`, (htmlData) => {
         $("main").html(htmlData);
 
