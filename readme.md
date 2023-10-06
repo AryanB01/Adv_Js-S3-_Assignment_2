@@ -1,4 +1,5 @@
 This is a personal portfolio site which aim to showcase who I am and why am I doing what I am doing!
+There is a original logo as well as a picture to see me!
 
 The purpose of this site is to dynamically direct the user to the different section of the page (Home, About Me, Skills, Projects, Contact Me) without having to reload the whole page. Immediately Invoked Function Expression (IIFE) is used to prevent the global scope of the functions. 
 Firstly the windows load the Start function which has the shared header and footer for the page. in the header file, there are links to different pages of the sites which is inserted in the landing page(index) dynamically. and the footer contains the copyright information.
