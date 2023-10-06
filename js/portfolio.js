@@ -3,7 +3,7 @@
   let LoadHeader = () => {
     $.get(`./views/shared/header.html`, (htmlData) => {
       $("header").html(htmlData);
-      LoadContent(); // this is for loading home as I want home to show instead of index at first.
+      // LoadContent(); // this is for loading home as I want home to show instead of index at first.
 
       //after navbar loaded attaching event handlers to each link
       $("li>a").on("click", (event) => {
@@ -69,7 +69,7 @@
     // setting the landing page to home
     let activePage = document.title;
     if (activePage == "Portfolio") {
-      document.title = "index";
+      // document.title = "";
       // console.log("test here");
       $.get(`./views/home.html`, (htmlData) => {
         $("main").html(htmlData);
