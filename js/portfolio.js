@@ -69,7 +69,7 @@
     // setting the landing page to home
     let activePage = document.title;
     if (activePage == "Portfolio") {
-      document.title = "home";
+      document.title = "index";
       // console.log("test here");
       $.get(`./views/home.html`, (htmlData) => {
         $("main").html(htmlData);
