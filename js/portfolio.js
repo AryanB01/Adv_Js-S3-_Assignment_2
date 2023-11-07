@@ -36,6 +36,7 @@
 			});
 
 			LoadHome();
+			
 
 			if(activePage = "Portfolio"){
 				$(document).on("click", ".contactMe", (event) =>{
@@ -60,9 +61,21 @@
 					});
 				});
 			};
+
+			//form submission
+			// redirecting user to aboutme page when the contace form is submitted
+
+			$(document).on("submit", "#formContact", function () {
+				event.preventDefault();
+				$.get(`./views/aboutme.html`, (htmlData) => {
+					$("main").html(htmlData);
+					history.pushState({}, "", `${document.title}`);
+				});
+			});
+	
 		};
         
-		
+
 	let LoadHome = () =>{
 		$.get(`./views/home.html`, (htmlData) => {
 			$("main").html(htmlData);
@@ -93,29 +106,14 @@
 		});
 	};
 
+	 
+
     let Start = () => {
 
           LoadHeader();
           LoadFooter();
           LoadContent();
-		  
-
-
         };
-          
-        
-
-          // setting the landing page to home
-          
-        //   if (document.title == "Portfolio") {
-        //     // console.log("test here");
-        //     $.get(`./views/home.html`, (htmlData) => {
-        //       $("main").html(htmlData);
-        //       console.log(document.title);
-        //       // adding home to top of history
-        //       history.pushState({}, "", `/${document.title}`);
-        //     });
-        //   }
         
         window.addEventListener("load", Start);
 	
